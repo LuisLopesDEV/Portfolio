@@ -5,6 +5,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #000;
     height: 100vh;
@@ -29,23 +33,27 @@ body {
     cursor: pointer;
 }
 
+button:hover {
+    box-shadow: 0px 0px 8px #00fb00;
+    transform: scale(1.05);
+}
+
 /* Header */
 
 header {
     display: flex;
 }
 
-header>.interface {
+header .interface {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    width: 100vw;
 }
 
 header a {
     color: #5c5c5c;
     text-decoration: none;
-    display: inline-block;
     transition: 0.2s;
 }
 
@@ -63,32 +71,214 @@ li {
     padding: 0 40px;
 }
 
-#contatoBtn:hover {
-    box-shadow: 0px 0px 8px #00fb00;
-    transform: scale(1.05);
-}
+
 
 /* Main */
 
-
-
-
 section.topo-site {
-    padding: 40px 4%;
+    margin: 180px 4% 90px;
 }
 
 section.topo-site .flex {
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 90px;
 }
 
 .txt-main h1 {
     color: #fff;
     font-size: 42px;
+    line-height: 40px;
+}
+
+.txt-main h1 span {
+    color: #04cc04;
+    font-size: 55px;
+    text-shadow: 0px 0px 2.5px #00fb00;
 }
 
 .txt-main p {
     color: #fff;
     font-size: 13px;
+    padding-top: 15px;
+}
+
+.btn {
+    margin-top: 25px;
+}
+
+.topo-site .img-main {
+    position: relative;
+    animation: img-animacao 2s ease-in-out infinite alternate;
+}
+
+@keyframes img-animacao {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+/*Section*/
+.espec {
+    padding: 90px 4% 90px;
+}
+
+.espec .flex {
+    justify-content: space-around;
+}
+
+.espec h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+}
+
+.espec h1 span {
+    color: #06f106;
+    font-size: 35px;
+    text-shadow: 0px 0px 2.5px #00fb00;
+}
+
+div.box-sec {
+    width: 350px;
+    height: 245px;
+    color: #fff;
+    margin-top: 50px;
+    transition: .2s;
+    padding: 10px;
+}
+
+div.box-sec:hover {
+    transform: scale(1.03);
+   box-shadow: 0 0 5px #5c5c5c6c;
+}
+
+div.box-sec i {
+    font-size: 50px;
+    color: #00fb00;
+}
+
+div.box-sec p {
+    font-size: 0.8em;
+}
+
+/* Sobre */
+
+.sobre .flex {
+    align-items: center;
+    gap: 90px;
+}
+
+section.sobre {
+    padding: 170px 4% 90px;
+
+    color: #fff;
+}
+
+.sobre .flex .txt-sobre {
+    flex-direction: column;
+
+}
+
+.sobre h1 {
+    font-size: 42px;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+
+.sobre h1 span {
+    color: #00fb00;
+    display: block;
+}
+
+.sobre p {
+    margin-bottom: 30px;
+}
+
+.sobre button {
+    font-size: 23px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    margin: 0 8px;
+    color: black;
+    background-color: #00fb00;
+    cursor: pointer;
+}
+
+/* Projetos */
+section.port {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff08;
+}
+.port h1{
+    text-align: center;
+    color: white;
+}
+.port h1 span{
+    color: #00fb00;
+}
+section.port .flex {
+   justify-content: space-around;
+   margin-top: 60px;
+}
+
+.port .projetos {
+    width: 350px;
+    height: 460px;
+    position: relative;
+    background-size: cover;
+    background-position: 100% 0%;
+    border-radius: 35px;
+    transition: 6s;
+    cursor: pointer;
+
+}
+.port .projetos:hover{
+    background-position: 100% 100%;
+    border-radius: 38px;
+}
+.port .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: #00000037;
+    opacity: 0;
+    transition: 0.5s;
+}
+.port .overlay:hover{
+    opacity: 1;
+    border-radius: 38px;
+}
+
+/* Footer */
+
+
+footer#foot button {
+    font-size: 23px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    margin: 0 8px;
+    color: black;
+    background-color: #00fb00;
+    cursor: pointer;
+
+}
+#foot{
+    background-color: white;
 }
