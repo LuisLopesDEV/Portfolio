@@ -10,6 +10,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
     <title>Portfólio</title>
 </head>
 
@@ -35,7 +36,26 @@
                 <a href="#"><button id="contatoBtn">Contato</button></a>
             </div>
 
+            <div class="menu-mobile">
+                <div class="btn-abrir">
+                    <i class="bi bi-list"></i>
+                </div>
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
 
+                <nav>
+                    <ul>
+                        <li><a href="#topo-site" target="_self">Inicio</a></li>
+                        <li><a href="#espec" target="_self">Especialidades</a></li>
+                        <li><a href="#sobre" target="_self">Sobre</a></li>
+                        <li><a href="#projetos" target="_self">Projetos</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+            <div class="overlay-menu"></div>
         </div> <!-- interface -->
     </header>
 
@@ -45,7 +65,7 @@
                 <div class="flex">
 
                     <div class="txt-main">
-                        <h1>Testando uma frase de referência para o projeto Portfólio<span>.</span>
+                        <h1 class="titulo">Testando uma frase de referência para o projeto Portfólio<span>.</span>
                         </h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum consectetur consequuntur
                             voluptatibus id eius possimus? Facilis quibusdam veritatis dicta, accusantium modi quo
@@ -64,7 +84,7 @@
 
         <section class="espec" id="espec">
             <div class="interface">
-                <h1>Minhas <span>Especialidades.</span></h1>
+                <h1 class="titulo">Minhas <span>Especialidades.</span></h1>
                 <div class="flex">
                     <div class="box-sec">
                         <i class="bi bi-code-square"></i>
@@ -115,7 +135,7 @@
 
         <section class="port" id="projetos">
             <div class="interface">
-                <h1>MEU <span>PORTFÓLIO.</span></h1>
+                <h1 class="titulo">MEU <span>PORTFÓLIO.</span></h1>
                 <div class="flex">
                     <div class="projetos" style="background-image: url(images/imagem.jpg);">
                     <div class="overlay">projeto1</div></div>
@@ -129,27 +149,31 @@
 
         <section class="formulario">
             <div class="interface">
-                <div class="flex">
-                    <h1>FALE <span>COMIGO</span></h1>
+                    <h1 class="titulo">FALE <span>COMIGO</span></h1>
                     <h2>Vamos tirar suas ideias do papel</h2>
-                    <input type="text" name="" id="">
-                    <input type="email" name="" id="">
-                    <input type="tel" name="" id="">
-                    <input type="text" name="" id="">
-                    <button id="contatoBtn">Enviar</button>
-                </div> <!-- flex -->
+                    
+                    <form action="#">
+                        <input type="text" name="name" id="name" placeholder="Nome completo:" required>
+                        <input type="email" name="email" id="email" placeholder="Email:" required>
+                        <input type="tel" name="num" id="num" placeholder="Seu celular:" >
+                        <textarea name="msg" id="msg" placeholder="Sua Mensagem:" required></textarea>
+                        <input type="button" id="BtnForm" value="Enviar">
+                    </form>
             </div> <!--interface-->
         </section>
     </main>
 
     <footer id="foot">
-        <h1>BRN</h1>
-        <div class="redes">
-            <a href=""><button><i class="bi bi-github"></i></button></a>
-            <a href=""><button><i class="bi bi-instagram"></i></button></a>
-            <a href=""><button><i class="bi bi-linkedin"></i></button></a>
+        <div class="flex">
+            <img src="images/logo.png" alt="Logo da Agência BRNw">
+            <div class="redes">
+                <a href=""><button><i class="bi bi-github"></i></button></a>
+                <a href=""><button><i class="bi bi-instagram"></i></button></a>
+                <a href=""><button><i class="bi bi-linkedin"></i></button></a>
+            </div>
         </div>
-        <a href="#"> <i class="bi bi-envelope"></i> Contato@bruno.com</a>
+        <br>
+            <div class="gmail"><a href="#"> <i class="bi bi-envelope"></i> Contato@bruno.com</a></div>
     </footer>
 
 </body>
