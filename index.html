@@ -9,12 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="css/style_mobile.css">
+    <link rel="stylesheet" href="css/style_desktop.css">
     <title>Portfólio</title>
 </head>
 
 <body>
+
     <header>
         <div class="interface">
             <div class="logo">
@@ -23,159 +24,143 @@
                 </a>
             </div>
 
-            <nav class="links">
-                <ul>
-                    <li><a href="#topo-site" target="_self">Inicio</a></li>
-                    <li><a href="#espec" target="_self">Especialidades</a></li>
-                    <li><a href="#sobre" target="_self">Sobre</a></li>
-                    <li><a href="#projetos" target="_self">Projetos</a></li>
-                </ul>
-            </nav>
-
-            <div class="btn-contato">
-                <a href="#"><button id="contatoBtn">Contato</button></a>
-            </div>
-
-            <div class="menu-mobile">
-                <div class="btn-abrir">
-                    <i class="bi bi-list"></i>
-                </div>
-                <div class="btn-fechar">
-                    <i class="bi bi-x-lg"></i>
-                </div>
-
-                <nav>
+            <!-- <div class="list">
+                <i class="bi bi-list"></i>
+                <i class="bi bi-x-lg" style="display: none;"></i>
+                <nav class="links">
                     <ul>
                         <li><a href="#topo-site" target="_self">Inicio</a></li>
                         <li><a href="#espec" target="_self">Especialidades</a></li>
                         <li><a href="#sobre" target="_self">Sobre</a></li>
                         <li><a href="#projetos" target="_self">Projetos</a></li>
-                        <li><a href="#">Contato</a></li>
                     </ul>
                 </nav>
-
             </div>
-            <div class="overlay-menu"></div>
+            <div class="overlay-header"></div> -->
         </div> <!-- interface -->
     </header>
-
-    <main>
-        <section class="topo-site" id="topo-site">
-            <div class="interface">
-                <div class="flex">
-
-                    <div class="txt-main">
-                        <h1 class="titulo">Testando uma frase de referência para o projeto Portfólio<span>.</span>
-                        </h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum consectetur consequuntur
-                            voluptatibus id eius possimus? Facilis quibusdam veritatis dicta, accusantium modi quo
-                            saepe,
-                            dolores minima hic officiis blanditiis maxime eos.</p>
-                        <div class="btn"><button id="contatoBtn">Entre em contato</button></div>
-                    </div>
-
-                    <div class="img-main">
-                        <img src="images/pessoa.png" alt="">
-                    </div>
-
-                </div> <!-- flex -->
-            </div> <!-- interface -->
-        </section>
-
-        <section class="espec" id="espec">
-            <div class="interface">
-                <h1 class="titulo">Minhas <span>Especialidades.</span></h1>
-                <div class="flex">
-                    <div class="box-sec">
-                        <i class="bi bi-code-square"></i>
-                        <h3>Website</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ex voluptatem molestias
-                            quam harum beatae iusto aliquam dicta accusamus ea maxime hic nesciunt pariatur quisquam
-                            blanditiis dolorum, neque eaque tenetur.</p>
-                    </div>
-                    <div class="box-sec">
-                        <i class="bi bi-cart"></i>
-                        <h3>Loja online</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ex voluptatem molestias
-                            quam harum beatae iusto aliquam dicta accusamus ea maxime hic nesciunt pariatur quisquam
-                            blanditiis dolorum, neque eaque tenetur.</p>
-                    </div>
-                    <div class="box-sec">
-                        <i class="bi bi-github"></i>
-                        <h3>GitHub</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ex voluptatem molestias
-                            quam harum beatae iusto aliquam dicta accusamus ea maxime hic nesciunt pariatur quisquam
-                            blanditiis dolorum, neque eaque tenetur.</p>
-                    </div>
-                </div> <!-- espec-box -->
-            </div> <!-- flex -->
-            </div> <!-- interface -->
-        </section>
-
-        <section class="sobre" id="sobre">
-            <div class="interface">
-                <div class="flex">
-                    <img src="images/foto.png" alt="Minha foto">
-                    <div class="txt-sobre">
-                        <h1>MUITO PRAZER, <span>SOU BRUNO RODRIGUES.</span></h1>
-
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis consectetur mollitia enim pariatur, sed debitis tempora unde reprehenderit minus fugit expedita nam corrupti eos modi dignissimos, quasi eligendi temporibus soluta!</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, voluptatum velit? Asperiores fugit accusamus dolore inventore vitae totam rerum consequuntur eum! Ab neque, accusantium ratione rem ipsa ea ex vel?</p>
-                        <div class="redes">
-                            <a href=""><button><i class="bi bi-github"></i></button></a>
-                            <a href=""><button><i class="bi bi-instagram"></i></button></a>
-                            <a href=""><button><i class="bi bi-linkedin"></i></button></a>
+        <main>
+            <section class="topo-site" id="topo-site">
+                <div class="interface">
+                    <div class="flex">
+                        
+                        <div class="img-main">
+                            <img id="img-topo" src="images/pessoa.png" alt="">
                         </div>
-                    </div>
 
+                        <div class="txt-main">
+                            <h1 class="titulo">To testando o modo mobile<span>.</span>
+                            </h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum consectetur consequuntur
+                                voluptatibus id eius possimus? Facilis quibusdam veritatis dicta, accusantium modi quo
+                                saepe,
+                                dolores minima hic officiis blanditiis maxime eos.</p>
+                            <div class="btn"><button id="contatoBtn">Entre em contato</button></div>
+                        </div>
+    
+                    </div> <!-- flex -->
+                </div> <!-- interface -->
+            </section>
+
+            <section class="espec" id="espec">
+                <div class="interface">
+                    <h1 class="titulo">Minhas <span>Especialidades.</span></h1>
+                    <div class="flex">
+                        <div class="box-sec">
+                            <i class="bi bi-code-square"></i>
+                            <h3>Website</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ex voluptatem molestias
+                                quam harum beatae iusto aliquam dicta accusamus ea maxime hic nesciunt pariatur quisquam
+                                blanditiis dolorum, neque eaque tenetur.</p>
+                        </div>
+                        <div class="box-sec">
+                            <i class="bi bi-cart"></i>
+                            <h3>Loja online</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ex voluptatem molestias
+                                quam harum beatae iusto aliquam dicta accusamus ea maxime hic nesciunt pariatur quisquam
+                                blanditiis dolorum, neque eaque tenetur.</p>
+                        </div>
+                        <div class="box-sec">
+                            <i class="bi bi-github"></i>
+                            <h3>GitHub</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ex voluptatem molestias
+                                quam harum beatae iusto aliquam dicta accusamus ea maxime hic nesciunt pariatur quisquam
+                                blanditiis dolorum, neque eaque tenetur.</p>
+                        </div>
+                    </div> <!-- espec-box -->
                 </div> <!-- flex -->
-            </div> <!-- interface -->
+                </div> <!-- interface -->
+            </section>
 
-        </section>
+            <section class="sobre" id="sobre">
+                <div class="interface">
+                    <div class="flex">
+                        <img id="img-sobre" src="images/foto.png" alt="Minha foto">
+                        <div class="txt-sobre">
+                            <h1>MUITO PRAZER, <span>SOU BRUNO RODRIGUES.</span></h1>
+    
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis consectetur mollitia enim
+                                pariatur, sed debitis tempora unde reprehenderit minus fugit expedita nam corrupti eos modi
+                                dignissimos, quasi eligendi temporibus soluta!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, voluptatum velit? Asperiores
+                                fugit accusamus dolore inventore vitae totam rerum consequuntur eum! Ab neque, accusantium
+                                ratione rem ipsa ea ex vel?</p>
+                            <div class="redes">
+                                <a href=""><button><i class="bi bi-github"></i></button></a>
+                                <a href=""><button><i class="bi bi-instagram"></i></button></a>
+                                <a href=""><button><i class="bi bi-linkedin"></i></button></a>
+                            </div>
+                        </div>
+    
+                    </div> <!-- flex -->
+                </div> <!-- interface -->
+            </section>
 
-        <section class="port" id="projetos">
-            <div class="interface">
-                <h1 class="titulo">MEU <span>PORTFÓLIO.</span></h1>
-                <div class="flex">
-                    <div class="projetos" style="background-image: url(images/imagem.jpg);">
-                    <div class="overlay">projeto1</div></div>
-                    <div class="projetos" style="background-image: url(images/imagem.jpg);">
-                        <div class="overlay">projeto1</div></div>
-                    <div class="projetos" style="background-image: url(images/imagem.jpg);">
-                        <div class="overlay">projeto1</div></div>
-                </div> <!--flex-->
-            </div> <!--interface-->
-        </section>
+            <section class="port" id="projetos">
+                <div class="interface">
+                    <h1 class="titulo">MEU <span>PORTFÓLIO.</span></h1>
+                    <div class="flex">
+                        <div class="projetos" style="background-image: url(images/imagem.jpg);">
+                            <div class="overlay">projeto1</div>
+                        </div>
+                        <div class="projetos" style="background-image: url(images/imagem.jpg);">
+                            <div class="overlay">projeto1</div>
+                        </div>
+                        <div class="projetos" style="background-image: url(images/imagem.jpg);">
+                            <div class="overlay">projeto1</div>
+                        </div>
+                    </div> <!--flex-->
+                </div> <!--interface-->
+            </section>
 
-        <section class="formulario">
-            <div class="interface">
+            <section class="formulario">
+                <div class="interface">
                     <h1 class="titulo">FALE <span>COMIGO</span></h1>
                     <h2>Vamos tirar suas ideias do papel</h2>
-                    
+    
                     <form action="#">
                         <input type="text" name="name" id="name" placeholder="Nome completo:" required>
                         <input type="email" name="email" id="email" placeholder="Email:" required>
-                        <input type="tel" name="num" id="num" placeholder="Seu celular:" >
+                        <input type="tel" name="num" id="num" placeholder="Seu celular:">
                         <textarea name="msg" id="msg" placeholder="Sua Mensagem:" required></textarea>
                         <input type="button" id="BtnForm" value="Enviar">
                     </form>
-            </div> <!--interface-->
-        </section>
-    </main>
+                </div> <!--interface-->
+            </section>
+        </main>
 
-    <footer id="foot">
-        <div class="flex">
-            <img src="images/logo.png" alt="Logo da Agência BRNw">
-            <div class="redes">
-                <a href=""><button><i class="bi bi-github"></i></button></a>
-                <a href=""><button><i class="bi bi-instagram"></i></button></a>
-                <a href=""><button><i class="bi bi-linkedin"></i></button></a>
+        <footer id="foot">
+            <div class="flex">
+                <img src="images/logo.png" alt="Logo da Agência BRNw">
+                <div class="redes">
+                    <a href=""><button><i class="bi bi-github"></i></button></a>
+                    <a href=""><button><i class="bi bi-instagram"></i></button></a>
+                    <a href=""><button><i class="bi bi-linkedin"></i></button></a>
+                </div>
             </div>
-        </div>
-        <br>
+            <br>
             <div class="gmail"><a href="#"> <i class="bi bi-envelope"></i> Contato@bruno.com</a></div>
-    </footer>
-
+        </footer>
 </body>
 
 </html>
