@@ -23,11 +23,9 @@
                     <img src="images/logo.png" alt="Logo da Agência BRN">
                 </a>
             </div>
-
-            <!-- <div class="list">
-                <i class="bi bi-list"></i>
-                <i class="bi bi-x-lg" style="display: none;"></i>
-                <nav class="links">
+           
+            <div class="desktop-links">
+                <nav class="desktop-link">
                     <ul>
                         <li><a href="#topo-site" target="_self">Inicio</a></li>
                         <li><a href="#espec" target="_self">Especialidades</a></li>
@@ -36,7 +34,25 @@
                     </ul>
                 </nav>
             </div>
-            <div class="overlay-header"></div> -->
+            <button class="contato" id="contatoBtn">Contato</button>
+            
+            <div class="mobile-links">
+                <i class="bi bi-list open"></i>
+                <div class="list">
+                
+                
+                    <nav class="links">
+                        <i class="bi bi-x-lg close"  ></i>
+                        <ul>
+                            <li><a href="#topo-site" target="_self">Inicio</a></li>
+                            <li><a href="#espec" target="_self">Especialidades</a></li>
+                            <li><a href="#sobre" target="_self">Sobre</a></li>
+                            <li><a href="#projetos" target="_self">Projetos</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="overlay-header"></div>
+            </div>
         </div> <!-- interface -->
     </header>
         <main>
@@ -161,6 +177,8 @@
             <br>
             <div class="gmail"><a href="#"> <i class="bi bi-envelope"></i> Contato@bruno.com</a></div>
         </footer>
+
+        <script src="script.js"></script>
 </body>
 
 </html>

@@ -5,6 +5,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+div.desktop-links, button.contato{
+    display: none;
+}
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -52,9 +57,10 @@ button:hover,
 }
 
 /* Header */
-.logo{
+.logo {
     padding: 8px;
 }
+
 header a {
     color: #5c5c5c;
     text-decoration: none;
@@ -68,11 +74,15 @@ header .links a:hover {
 
 header .links ul {
     list-style-type: none;
+    text-align: right;
+    width: 100%;
+     
 }
 
 .links li {
     font-size: 1.5em;
     width: 100%;
+    height: 100%;
     gap: 20px;
     padding: 10%;
 }
@@ -82,30 +92,65 @@ header .links ul {
     color: #000;
 }
 
-div.list {
-    display: flex;
+.links li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.list {
+    display: none;
     flex-direction: column;
     position: fixed;
     top: 0;
     right: 0;
     height: 100%;
     width: 70%;
-
     background-color: #000;
     z-index: 9999;
+    transition: max-width 0.5s ease-in-out;
+    max-width: 100%;
 }
-.overlay-header{
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #00000094;
-    z-index: 9998;
+
+
+
+.list.hidden {
+    max-width: 0;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
 }
+
+.list.hidden + .overlay-header {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
 header i {
     color: #00ff08;
-    font-size: 50px;
+    font-size: 40px;
+    padding: 3%;
+}
+
+.open {
+    position: fixed;
+    top: 0;
+    right: 15px;
+}
+
+.overlay-header {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.338);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    z-index: 9998;
 }
 
 /*Section*/
@@ -390,4 +435,3 @@ footer#foot button {
     color: #00fb00;
     font-size: 28px;
 }
-
