@@ -1,4 +1,4 @@
-@media screen and (min-width: 900px) {
+@media only screen and (min-width : 800px) {
     * {
         padding: 0;
         margin: 0;
@@ -7,9 +7,11 @@
     }
 
     div.desktop-links, button.contato{
-        display: block;
+        display: inline-block;
     }
-
+    div.mobile-links{
+        display: none;
+    }
     html {
         scroll-behavior: smooth;
     }
@@ -60,25 +62,12 @@
     .mobile-links {
         display: none;
     }
-    .desktop-link ul li{
-        display: inline-block;
-        padding: 10px;
-        font-weight: 500;
-        font-size: 20px;
+    .desktop-links{
+        display: block;
     }
-    .desktop-link ul li a:hover{
-        color: #fff;
-    }
+
     header {
         display: flex;
-    }
-
-    section.topo-site .img-main {
-        order: 2;
-    }
-
-    section.topo-site .txt-main {
-        order: 1;
     }
 
     header .interface {
@@ -94,21 +83,31 @@
         transition: 0.2s;
     }
 
-    header .links a:hover {
+    header .desktop-link a:hover {
         color: #fff;
         transform: scale(1.05);
     }
 
-    header .links ul {
+    header .desktop-link ul {
         list-style-type: none;
     }
 
-    .links li {
+    .desktop-link li {
         display: inline-block;
-        padding: 0 40px;
+        padding: 10px;
+        font-weight: 500;
+        font-size: 20px;
     }
 
     /* Main */
+
+    section.topo-site .img-main {
+        order: 2;
+    }
+
+    section.topo-site .txt-main {
+        order: 1;
+    }
 
     section.topo-site {
         margin: 180px 4% 90px;
@@ -120,7 +119,9 @@
         flex-direction: row;
         gap: 90px;
     }
-
+    .topo-site #contatoBtn{
+        margin-left: -25px;
+    }
     .txt-main h1 {
         color: #fff;
         font-size: 42px;
